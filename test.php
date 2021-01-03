@@ -13,11 +13,13 @@ if (isset($update_array["message"])) {
     $text    = $update_array["message"]["text"]; //text User
     $chat_id = $update_array["message"]["chat"]["id"]; //chat id type
 
-if ($text == "/start") {
-    sendMessage([
-        'chat_id' => $chat_id,
-        'text' => var_export($update_array, true)
-    ]);
+    if ($text == "/start") {
+        sendMessage([
+            'chat_id' => $chat_id,
+            'text' => var_export($update_array, true)
+        ]);
+    }
+
 }
 
 ?>
