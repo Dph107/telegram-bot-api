@@ -19,7 +19,6 @@ if (isset($update_array["message"])) {
             'text' => var_export($update_array, true)
         ]);
     }
-
 }
 
 ?>
